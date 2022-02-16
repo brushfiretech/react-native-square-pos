@@ -12,12 +12,12 @@ buildscript {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
     buildToolsVersion "28.0.3"
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 22
+        minSdkVersion 24
+        targetSdkVersion 30
         versionCode 1
         versionName "1.0"
     }
@@ -31,7 +31,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.facebook.react:react-native:+'
-    compile 'com.squareup.sdk:point-of-sale-sdk:2.+'
+    implementation 'com.facebook.react:react-native:+'
+    implementation 'com.squareup.sdk:point-of-sale-sdk:2.+'
 }
   
