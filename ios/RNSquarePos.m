@@ -46,6 +46,8 @@ RCT_EXPORT_METHOD(
 				currType = SCCAPIRequestTenderTypeCash;
 			} else if ([tenderType isEqualToString:@"CARD"]) {
 				currType = SCCAPIRequestTenderTypeCard;
+			} else if ([tenderType isEqualToString:@"GIFT_CARD"]) {
+				currType = SCCAPIRequestTenderTypeSquareGiftCard;
 			} else if ([tenderType isEqualToString:@"CARD_ON_FILE"]) {
 				currType = SCCAPIRequestTenderTypeCardOnFile;
 			} else if ([tenderType isEqualToString:@"OTHER"]) {
